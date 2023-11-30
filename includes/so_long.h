@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 17:10:28 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/11/29 18:08:06 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/11/30 08:20:44 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,19 @@
 
 # include <fcntl.h>
 # include "libft/libft.h"
+
+typedef struct s_game
+{
+	int		fd;
+	int		map_width;
+	int		map_height;
+	int		player_x;
+	int		player_y;
+	int		collectibles;
+	int		moves;
+	int		exit;
+	char	**map;
+}				t_game;
+
 
 #endif
